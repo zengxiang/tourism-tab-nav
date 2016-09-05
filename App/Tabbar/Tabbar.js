@@ -29,7 +29,7 @@ export default class TabbarVC extends Component {
         return (
             <Router key='modal'>
                 <Scene key='root'>
-                    <Scene key='tabbar' tabs={true}>
+                    <Scene key='tabbar' tabs={true} style={{backgroundColor:'#eeeeee'}}>
                         <Scene key='tab1'  title='首页' icon={TabbarItem} idx={0} initial={true}>
                             <Scene
                                 key="Home"
