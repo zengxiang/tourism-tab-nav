@@ -1,6 +1,6 @@
 # tourismPC
 ```
-使用react-native-router-flux 项目框架 tab nav
+使用react-native-router-flux 搭建项目框架 tab nav
 
 ```
 
