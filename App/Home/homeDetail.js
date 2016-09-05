@@ -8,11 +8,14 @@ import {
     View
 } from 'react-native';
 import {Actions} from 'react-native-router-flux';
+import Button from 'react-native-button';
 
 export default class Page1_1 extends Component {
     render() {
         return (
             <View style={styles.container}>
+                <Button onPress={Actions.pop}>返回</Button>
+
                 <Text style={styles.welcome} onPress={Actions.pop}>
                     Welcome to Page1_1 {this.props.title}
                 </Text>

@@ -39,6 +39,17 @@ export default class TabbarVC extends Component {
                             <Scene
                                 key="HomeDetail"
                                 component={HomeDetail}
+                                title="首页详情"
+                            />
+                            <Scene
+                                key="HomeDetail1"
+                                component={HomeDetail}
+                                hideNavBar
+                                title="首页详情"
+                            />
+                            <Scene
+                                key="HomeDetail2"
+                                component={HomeDetail}
                                 hideTabBar
                                 title="首页详情"
                             />

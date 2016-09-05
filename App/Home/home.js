@@ -35,6 +35,9 @@ export default class Home extends Component {
                     onPress={this._handlePress}>
                     push Detail(方法里跳转)
                 </Button>
+                <Button onPress={Actions.HomeDetail1}>隐藏nav</Button>
+                <Button onPress={Actions.HomeDetail2}>隐藏tab</Button>
+
             </View>
         )
     }
