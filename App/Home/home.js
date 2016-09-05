@@ -18,21 +18,6 @@ export default class Home extends Component {
         this.state = {};
     }
 
-    _pressButton(title) {
-        const {navigator} = this.props;
-        // if (navigator) {
-        // 	navigator.push({
-        // 		name: 'Page11',
-        // 		component: Page11,
-        // 		params: {
-        // 			title: title,
-        // 		},
-        // 	});
-        // }
-
-        alert(title);
-    }
-
     _handlePress() {
         Actions.HomeDetail();
     }
@@ -42,15 +27,13 @@ export default class Home extends Component {
         let pushNext = ()=>alert('下一个');
         return (
             <View style={{margin: 64}}>
-                <Text onPress={Actions.tab3}>This is PageOne!</Text>
-                <Button onPress={()=>this._pressButton('2222')}>push</Button>
-                <Button onPress={Actions.HomeDetail}>push11</Button>
-
+                <Button onPress={Actions.tab2}>跳到消息页面</Button>
+                <Button onPress={Actions.HomeDetail}>push Detail</Button>
                 <Button
                     style={{fontSize: 20, color: 'green'}}
                     styleDisabled={{color: 'red'}}
                     onPress={this._handlePress}>
-                    Press Me!
+                    push Detail(方法里跳转)
                 </Button>
             </View>
         )
