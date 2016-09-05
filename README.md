@@ -5,7 +5,7 @@
 ```
 
 ```
-![APP界面](https://raw.githubusercontent.com/Kennytian/LagouApp/master/screenshot.gif)
+![APP界面](https://raw.githubusercontent.com/zengxiang/tourismPC/master/11.gif)
 
 ```
 感谢 https://github.com/Kennytian/
