@@ -8,16 +8,16 @@ import {
     View
 } from 'react-native';
 
-export default class navTabIcon extends Component {
+export default class TabbarItem extends Component {
     render() {
         const imageSource = [
-            {normal: require('./../images/icon_home_nor.png'), selected: require('./../images/icon_home_pre.png')},
+            {normal: require('./../img/icon_home_nor.png'), selected: require('./../img/icon_home_pre.png')},
             {
-                normal: require('./../images/icon_message_nor.png'),
-                selected: require('./../images/icon_message_pre.png')
+                normal: require('./../img/icon_message_nor.png'),
+                selected: require('./../img/icon_message_pre.png')
             },
-            {normal: require('./../images/icon_find_nor.png'), selected: require('./../images/icon_find_pre.png')},
-            {normal: require('./../images/icon_user_nor.png'), selected: require('./../images/icon_user_pre.png')},
+            {normal: require('./../img/icon_find_nor.png'), selected: require('./../img/icon_find_pre.png')},
+            {normal: require('./../img/icon_user_nor.png'), selected: require('./../img/icon_user_pre.png')},
         ];
 
         let imageType = this.props.selected ? 'selected' : 'normal';

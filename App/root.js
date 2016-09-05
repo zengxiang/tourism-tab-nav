@@ -2,13 +2,13 @@
 import React, {Component} from 'react';
 import {AppRegistry, Navigator} from 'react-native';
 
-import Splash from './src/splash';
-//import Frame from './src/frame';
+// import Splash from './src/splash';
+import Default from './Tabbar/Default';
 
 class TourismPC extends Component {
     render() {
-        let defaultName = "splash";
-        let defaultComponent = Splash;
+        let defaultName = "Default";
+        let defaultComponent = Default;
         return (
             <Navigator initialRoute={{name: defaultName, component: defaultComponent}}
                        renderScene={(route, navigator) => {

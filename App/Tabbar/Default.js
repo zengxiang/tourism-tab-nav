@@ -4,10 +4,10 @@ import {
 	Image
 } from 'react-native';
 
-import Frame from './frame';
+// import Frame from './frame';
+import TabbarVC from './Tabbar';
 
-
-export default class Splash extends Component {
+export default class Default extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {};
@@ -24,15 +24,15 @@ export default class Splash extends Component {
 		let {navigator} = this.props;
 		if (navigator) {
 			navigator.replace({
-				name: 'frame',
-				component: Frame
+				name: 'TabbarVC',
+				component: TabbarVC
 			})
 		}
 	}
 
 	render() {
 		return (
-			<Image source={require('./images/hello_page_bg.png')} style={styles.backgroundImage}/>
+			<Image source={require('./../img/hello_page_bg.png')} style={styles.backgroundImage}/>
 		)
 	}
 

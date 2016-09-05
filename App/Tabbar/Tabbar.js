@@ -7,16 +7,15 @@ import {
 import {Router, Scene} from 'react-native-router-flux';
 
 // components
-import navBarIcon from './components/navTabIcon';
+import TabbarItem from './TabbarItem';
 
 // pages
 import Home from './../Home/home';
 import HomeDetail from './../Home/homeDetail';
 
-import Page2 from './page2';
-import Page3 from './page3';
-
-export default class Frame extends Component {
+// import Page2 from './page2';
+// import Page3 from './page3';
+export default class TabbarVC extends Component {
     render() {
         let rightButton = () => {
             return (
@@ -31,7 +30,7 @@ export default class Frame extends Component {
             <Router key='modal'>
                 <Scene key='root'>
                     <Scene key='tabbar' tabs={true}>
-                        <Scene key='tab1'  title='首页' icon={navBarIcon} idx={0} initial={true}>
+                        <Scene key='tab1'  title='首页' icon={TabbarItem} idx={0} initial={true}>
                             <Scene
                                 key="Home"
                                 component={Home}
@@ -45,11 +44,11 @@ export default class Frame extends Component {
                             />
 
                         </Scene>
-                        <Scene key='tab2' component={Page2} title='消息' icon={navBarIcon} idx={1}
+                        <Scene key='tab2' component={Home} title='消息' icon={TabbarItem} idx={1}
                                navigationBarStyle={{backgroundColor: 'red'}} titleStyle={{color: 'white'}}/>
-                        <Scene key='tab3' component={Page3} title='发现' icon={navBarIcon} idx={2}
+                        <Scene key='tab3' component={Home} title='发现' icon={TabbarItem} idx={2}
                                titleStyle={{color: 'blue'}} renderRightButton={rightButton}/>
-                        <Scene key='tab4' component={Page2} title='我的' icon={navBarIcon} idx={3}
+                        <Scene key='tab4' component={Home} title='我的' icon={TabbarItem} idx={3}
                                onLeft={() => alert("Left button!")} leftTitle="Left"
                                onRight={() => alert("Right button")}
                                rightTitle="Right"/>
