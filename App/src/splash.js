@@ -13,6 +13,7 @@ export default class Splash extends Component {
 		this.state = {};
 	}
 
+	//加载启动页面
 	componentDidMount() {
 		this.timer = setTimeout(() => {
 			this._navigateToFrame()

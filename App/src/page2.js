@@ -5,11 +5,13 @@ import {
 	View
 } from 'react-native';
 
+import {Actions} from 'react-native-router-flux';
+
 export default class Page2 extends Component {
 	render() {
 		return (
 			<View style={styles.container}>
-				<Text style={styles.welcome}>
+				<Text style={styles.welcome} onPress={Actions.Page1_2}>
 					Welcome to Page2 {this.props.title}
 				</Text>
 				<Text style={styles.instructions}>

@@ -11,14 +11,14 @@ class TourismPC extends Component {
         let defaultComponent = Splash;
         return (
             <Navigator initialRoute={{name: defaultName, component: defaultComponent}}
-        renderScene={(route, navigator) => {
-            let Component = route.component;
-            return <Component {...route.params} navigator={navigator} />
-        }}
-    />
-    )
+                       renderScene={(route, navigator) => {
+                           let Component = route.component;
+                           return <Component {...route.params} navigator={navigator}/>
+                       }}
+            />
+        )
     }
 }
 
-AppRegistry.registerComponent('tourismPC',()=>TourismPC);
+AppRegistry.registerComponent('tourismPC', ()=>TourismPC);
 
