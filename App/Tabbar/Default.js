@@ -13,13 +13,12 @@ export default class Default extends Component {
 		this.state = {};
 	}
 
-	//加载启动页面
+	// 加载启动页面
 	componentDidMount() {
 		this.timer = setTimeout(() => {
 			this._navigateToFrame()
 		}, 2000);
 	}
-
 	_navigateToFrame() {
 		let {navigator} = this.props;
 		if (navigator) {
