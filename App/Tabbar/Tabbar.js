@@ -65,13 +65,6 @@ export default class TabbarVC extends Component {
                                rightTitle="Right"/>
                     </Scene>
                 </Scene>
-
-                {/*//公共页面最好这写这里 方便重用*/}
-                <Scene
-                    key="Page1_2"
-                    component={HomeDetail}
-                    title="Page1_1"
-                />
             </Router>
         );
     }
